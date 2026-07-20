@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "close-tab-behavior",
   "version": "1.0.0",
-  "description": "アクティブなタブを閉じた後に、どのタブへ移動するかを選択できる拡張機能",
+  "description": "アクティブなタブを閉じた後に、どのタブへ移動するかを選択",
   "permissions": [
     "storage",
     "tabs"
