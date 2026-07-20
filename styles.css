@@ -28,24 +28,14 @@ body {
   padding: 48px 0;
 }
 
-.logo {
+.letter-icon {
   display: grid;
   flex: 0 0 auto;
   place-items: center;
-  width: 64px;
-  height: 64px;
-  color: white;
-  background: var(--accent);
-  border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(191, 56, 36, .2);
-  font: 700 34px/1 Georgia, serif;
-}
-
-.logo.small {
-  width: 42px;
+  width: 30px;
   height: 42px;
-  border-radius: 12px;
-  font-size: 23px;
+  color: var(--accent);
+  font: 700 30px/1 Arial, sans-serif;
 }
 
 fieldset {
