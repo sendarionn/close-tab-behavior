@@ -8,29 +8,6 @@ const historyByWindow = new Map();
 // Tracks the active tab before Chrome applies its own close-tab selection.
 const activeByWindow = new Map();
 
-function createLetterIcon(size) {
-  const canvas = new OffscreenCanvas(size, size);
-  const context = canvas.getContext("2d");
-  context.clearRect(0, 0, size, size);
-  context.fillStyle = "#e7563c";
-  context.font = `700 ${Math.round(size * 0.86)}px Arial, sans-serif`;
-  context.textAlign = "center";
-  context.textBaseline = "middle";
-  context.fillText("C", size / 2, size / 2 + size * 0.04);
-  return context.getImageData(0, 0, size, size);
-}
-
-async function setLetterIcon() {
-  await chrome.action.setIcon({
-    imageData: {
-      16: createLetterIcon(16),
-      32: createLetterIcon(32)
-    }
-  });
-}
-
-void setLetterIcon();
-
 async function persistState() {
   await chrome.storage.session.set({
     tabHistory: Object.fromEntries(historyByWindow),

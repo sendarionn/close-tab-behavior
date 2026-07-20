@@ -15,8 +15,7 @@ async function restore() {
   document.querySelector("#ignorePinned").checked = settings.ignorePinned;
 }
 
-form.addEventListener("submit", async (event) => {
-  event.preventDefault();
+async function save() {
   const behavior = form.elements.namedItem("behavior").value;
   const ignorePinned = document.querySelector("#ignorePinned").checked;
   await chrome.storage.sync.set({ behavior, ignorePinned });
@@ -24,6 +23,8 @@ form.addEventListener("submit", async (event) => {
   window.setTimeout(() => {
     status.textContent = "";
   }, 1800);
-});
+}
+
+form.addEventListener("change", save);
 
 restore();

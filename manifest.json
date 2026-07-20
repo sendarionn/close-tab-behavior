@@ -10,9 +10,5 @@
   "background": {
     "service_worker": "background.js"
   },
-  "action": {
-    "default_title": "タブを閉じた後の移動先",
-    "default_popup": "popup.html"
-  },
   "options_page": "options.html"
 }

@@ -28,16 +28,6 @@ body {
   padding: 48px 0;
 }
 
-.letter-icon {
-  display: grid;
-  flex: 0 0 auto;
-  place-items: center;
-  width: 30px;
-  height: 42px;
-  color: var(--accent);
-  font: 700 30px/1 Arial, sans-serif;
-}
-
 fieldset {
   min-width: 0;
   margin: 0 0 22px;
@@ -126,58 +116,14 @@ legend {
 .toggle input:checked + span::after { transform: translateX(20px); }
 .toggle input:focus-visible + span { outline: 3px solid rgba(231, 86, 60, .25); }
 
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 48px;
-  gap: 18px;
-}
-
 #status {
-  margin: 0;
+  min-height: 20px;
+  margin: 0 8px;
+  text-align: right;
   color: var(--teal);
   font-size: 13px;
   font-weight: 700;
 }
-
-button {
-  padding: 13px 24px;
-  color: white;
-  background: var(--teal);
-  border: 0;
-  border-radius: 10px;
-  font: 700 14px/1 inherit;
-  cursor: pointer;
-  box-shadow: 0 7px 18px rgba(23, 63, 66, .16);
-}
-button:hover { background: #0f3032; }
-button:focus-visible { outline: 3px solid rgba(231, 86, 60, .35); outline-offset: 2px; }
-
-.popup {
-  width: 340px;
-  min-height: 0;
-  background: var(--paper);
-}
-.popup main { padding: 20px; }
-.popup-head {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-.popup-head strong { color: var(--teal); font-size: 15px; }
-.popup-head p { margin: 4px 0 0; color: var(--muted); font-size: 11px; }
-.current {
-  margin: 18px 0 14px;
-  padding: 16px;
-  color: var(--teal);
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 750;
-}
-.secondary { width: 100%; }
 
 @media (max-width: 520px) {
   .shell { width: min(100% - 24px, 720px); padding-top: 32px; }
