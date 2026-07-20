@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Close Tab Behavior",
+  "name": "close-tab-behavior",
   "version": "1.0.0",
   "description": "アクティブなタブを閉じた後に、どのタブへ移動するかを選べます。",
   "permissions": [
